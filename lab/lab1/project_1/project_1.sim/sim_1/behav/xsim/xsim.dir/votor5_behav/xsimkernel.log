@@ -1,0 +1,7 @@
+Running: xsim.dir/votor5_behav/xsimk.exe -simmode gui -wdb votor5_behav.wdb -simrunnum 0 -socket 64569
+Design successfully loaded
+Design Loading Memory Usage: 5268 KB (Peak: 5268 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 5852 KB (Peak: 5852 KB)
+Simulation CPU Usage: 30 ms

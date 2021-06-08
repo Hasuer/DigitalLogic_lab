@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+G:/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+G:/Vivado_project/project_1/project_1.srcs/sim_1/new/voter5_tb.sv,1618227122,systemVerilog,,,,voter5_tb,,,,,,,,
+G:/Vivado_project/project_1/project_1.srcs/sources_1/new/Three2Eight.sv,1618226902,systemVerilog,,G:/Vivado_project/project_1/project_1.srcs/sources_1/new/Two2Four.sv,,dec3to8,,,,,,,,
+G:/Vivado_project/project_1/project_1.srcs/sources_1/new/Two2Four.sv,1618226917,systemVerilog,,G:/Vivado_project/project_1/project_1.srcs/sources_1/new/voter5.sv,,dec2to4,,,,,,,,
+G:/Vivado_project/project_1/project_1.srcs/sources_1/new/voter5.sv,1618226713,systemVerilog,,G:/Vivado_project/project_1/project_1.srcs/sim_1/new/voter5_tb.sv,,voter5,,,,,,,,

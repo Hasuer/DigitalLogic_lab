@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 26 08:26:21 2021
+# Process ID: 6768
+# Current directory: C:/Users/86150/Desktop/dig_clock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1332 C:\Users\86150\Desktop\dig_clock\dig_clock.xpr
+# Log file: C:/Users/86150/Desktop/dig_clock/vivado.log
+# Journal file: C:/Users/86150/Desktop/dig_clock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86150/Desktop/dig_clock/dig_clock.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/86150/Desktop/dig_clock/bin2bcd'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/86150/Desktop/dig_clock/bin2bcd/xgui'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 791.336 ; gain = 58.680
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May 26 08:26:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/86150/Desktop/dig_clock/dig_clock.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed May 26 08:28:01 2021] Launched impl_1...
+Run output will be captured here: C:/Users/86150/Desktop/dig_clock/dig_clock.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 26 08:33:41 2021] Launched impl_1...
+Run output will be captured here: C:/Users/86150/Desktop/dig_clock/dig_clock.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dig_clock_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dig_clock_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ec76e07e26d845b386e32e962ec4ce02 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dig_clock_tb_behav xil_defaultlib.dig_clock_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 885.965 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dig_clock_tb_behav -key {Behavioral:sim_1:Functional:dig_clock_tb} -tclbatch {dig_clock_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source dig_clock_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dig_clock_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 902.949 ; gain = 16.984
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Wed May 26 08:41:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/86150/Desktop/dig_clock/dig_clock.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 26 08:45:16 2021] Launched impl_1...
+Run output will be captured here: C:/Users/86150/Desktop/dig_clock/dig_clock.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 946.016 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 26 09:12:51 2021...

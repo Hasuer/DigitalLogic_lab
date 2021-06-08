@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 26 08:26:21 2021
+# Process ID: 6768
+# Current directory: C:/Users/86150/Desktop/dig_clock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1332 C:\Users\86150\Desktop\dig_clock\dig_clock.xpr
+# Log file: C:/Users/86150/Desktop/dig_clock/vivado.log
+# Journal file: C:/Users/86150/Desktop/dig_clock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86150/Desktop/dig_clock/dig_clock.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+source dig_clock_tb.tcl
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim

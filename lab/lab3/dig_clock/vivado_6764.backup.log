@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 25 19:10:28 2021
+# Process ID: 6764
+# Current directory: C:/Users/86150/Desktop/dig_clock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14148 C:\Users\86150\Desktop\dig_clock\dig_clock.xpr
+# Log file: C:/Users/86150/Desktop/dig_clock/vivado.log
+# Journal file: C:/Users/86150/Desktop/dig_clock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86150/Desktop/dig_clock/dig_clock.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/86150/Desktop/dig_clock/bin2bcd'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/86150/Desktop/dig_clock/bin2bcd/xgui'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 834.352 ; gain = 103.137
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'dig_clock_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj dig_clock_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/ip/bin2bcd_0/bin2bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/ip/bin2bcd_0/sim/bin2bcd_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/Edge_detection.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Edge_detection
+INFO: [VRFC 10-2458] undeclared symbol start_flag, assumed default net type wire [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/Edge_detection.sv:42]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/analyze2a_to_g.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module analyze2a_to_g
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/clk_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/dig_clock.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dig_clock
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/scan.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sim_1/new/dig_clock_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dig_clock_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ec76e07e26d845b386e32e962ec4ce02 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dig_clock_tb_behav xil_defaultlib.dig_clock_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_en
+Compiling module xil_defaultlib.Edge_detection
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.bin2bcd_0
+Compiling module xil_defaultlib.scan
+Compiling module xil_defaultlib.analyze2a_to_g
+Compiling module xil_defaultlib.dig_clock
+Compiling module xil_defaultlib.dig_clock_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dig_clock_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/86150/Desktop/dig_clock/dig_clock.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dig_clock_tb_behav -key {Behavioral:sim_1:Functional:dig_clock_tb} -tclbatch {dig_clock_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source dig_clock_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dig_clock_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 880.008 ; gain = 16.660
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tftg256-1
+Top: dig_clock
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1002.668 ; gain = 108.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dig_clock' [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/dig_clock.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_en' [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/clk_en.sv:23]
+	Parameter N bound to: 25000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_en' (1#1) [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/clk_en.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Edge_detection' [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/Edge_detection.sv:23]
+WARNING: [Synth 8-3848] Net pos_edge in module/entity Edge_detection does not have driver. [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/Edge_detection.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'Edge_detection' (2#1) [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/Edge_detection.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'timer' [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/timer.sv:23]
+	Parameter MAX_SEC bound to: 59 - type: integer 
+	Parameter MAX_MIN bound to: 59 - type: integer 
+	Parameter MAX_COUNT bound to: 25000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'timer' (3#1) [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/timer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd_0' [C:/Users/86150/Desktop/dig_clock/.Xil/Vivado-6764-LAPTOP-GSKICBGM/realtime/bin2bcd_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd_0' (4#1) [C:/Users/86150/Desktop/dig_clock/.Xil/Vivado-6764-LAPTOP-GSKICBGM/realtime/bin2bcd_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'scan' [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/scan.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'scan' (5#1) [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/scan.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'analyze2a_to_g' [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/analyze2a_to_g.sv:23]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/analyze2a_to_g.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'analyze2a_to_g' (6#1) [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/analyze2a_to_g.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dig_clock' (7#1) [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/new/dig_clock.sv:3]
+WARNING: [Synth 8-3331] design Edge_detection has unconnected port pos_edge
+WARNING: [Synth 8-3331] design Edge_detection has unconnected port clk
+WARNING: [Synth 8-3331] design Edge_detection has unconnected port reset
+WARNING: [Synth 8-3331] design Edge_detection has unconnected port i_btn
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1005.781 ; gain = 111.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1005.781 ; gain = 111.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1005.781 ; gain = 111.906
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/86150/Desktop/dig_clock/dig_clock.srcs/sources_1/ip/bin2bcd_0/bin2bcd_0.dcp' for cell 'U3'
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/constrs_1/new/dig_clock.xdc]
+Finished Parsing XDC File [C:/Users/86150/Desktop/dig_clock/dig_clock.srcs/constrs_1/new/dig_clock.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1374.473 ; gain = 480.598
+21 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1374.473 ; gain = 480.598
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/86150/Desktop/dig_clock/dig_clock.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May 25 22:02:29 2021] Launched synth_1...
+Run output will be captured here: C:/Users/86150/Desktop/dig_clock/dig_clock.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 26 00:28:24 2021...
